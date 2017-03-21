@@ -6,11 +6,7 @@ html {
 	box-sizing: inherit;
 }
 
-body {
-	font-family: 'Quattrocento', serif;
-	background-color: lightgray; 
-}
-
+/* Structure */
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -19,17 +15,18 @@ body {
 .row {
 	display: flex;
 	flex-direction: row;
-	/*flex-wrap: wrap;*/
+	flex-wrap: wrap;
 }
 
 .column {
 	flex-basis: 100%;
+	margin: 5px 0;
 }
 
 .landing {
 	display: flex;
 	flex-direction: column;
-	min-height: 95vh;
+	min-height: 90vh;
 	align-items: center;
 }
 
@@ -40,9 +37,24 @@ body {
 #links {
 	margin-bottom: auto;
 	text-align: center;
-	width: 50%;
+	width: 25%;
 }
 
+/* Styling */
+body {
+	font-family: 'Quattrocento', serif;
+	background-color: lightgray; 
+}
+
+a {
+	color: black;
+}
+
+#about {
+	background-color: white;
+}
+
+/* Larger screens */
 @media screen and (min-width: 800px) {
 	.column {
 		flex: 1;
