@@ -1,0 +1,57 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Quattrocento', serif;
+	background-color: lightgray; 
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+}
+
+.column {
+	flex-basis: 100%;
+}
+
+.landing {
+	display: flex;
+	flex-direction: column;
+	min-height: 95vh;
+	align-items: center;
+}
+
+#name {
+	margin-top: auto;
+}
+
+#links {
+	margin-bottom: auto;
+	text-align: center;
+	width: 50%;
+}
+
+@media screen and (min-width: 800px) {
+	.column {
+		flex: 1;
+	}
+
+/*	#links > .row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}*/
+}
