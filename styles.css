@@ -41,7 +41,8 @@ html {
 }
 
 article {
-	padding: 10px 10px;
+	padding: 10px 15px;
+	line-height: 1.5em;
 }
 
 article > .row {
@@ -72,11 +73,11 @@ body {
 }
 
 a {
-	color: black;
+	color: darkslategray;
 }
 
 a:hover {
-	color: darkslategray;
+	color: navy;
 }
 
 #landing {
@@ -120,14 +121,19 @@ footer a:hover {
 
 	.topic {
 		flex: 0.3;
+		align-self: flex-start;
 	}
 
 	.image {
-		flex: 0.3;
+		flex: 0.4;
 		margin-right: 20px;
 	}
 
 	.content {
-		flex: 0.4;
+		flex: 0.3;
+	}
+
+	.project {
+		align-items: center;
 	}
 }
