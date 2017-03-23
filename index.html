@@ -9,6 +9,16 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<symbol id="icon-circle-down" viewBox="0 0 32 32">
+				<title>circle-down</title>
+				<path d="M32 16c0-8.837-7.163-16-16-16s-16 7.163-16 16 7.163 16 16 16 16-7.163 16-16zM3 16c0-7.18 5.82-13 13-13s13 5.82 13 13-5.82 13-13 13-13-5.82-13-13z"></path>
+				<path d="M9.914 11.086l-2.829 2.829 8.914 8.914 8.914-8.914-2.828-2.828-6.086 6.086z"></path>
+			</symbol>
+		</defs>
+	</svg>
+
 	<section id="landing">
 		<div class="container">
 			<div class="landing-column">
@@ -29,6 +39,7 @@
 						</div>
 					</div>
 				</div>
+				<svg id="down" class="icon icon-circle-down"><use xlink:href="#icon-circle-down"></use></svg>
 			</div>
 		</div>
 	</section>
@@ -39,34 +50,42 @@
 					<div class="column topic">
 						<h2>Student</h2>
 					</div>
-					<div class="column">
-						<p id="nu">Northwestern University</p>
+					<div class="column content">
+						<p>I'm currently <span id="nu">Northwestern University</span>
 						<p>Computer Science</p>
 					</div>
 				</div>
+				<hr>
 				<div class="row">
 					<div class="column topic">
 						<h2>Aspiring developer</h2>
 					</div>
-					<div class="column">
+					<div class="column content">
 						<p>I was previously at these companies.</p>
 					</div>
 				</div>
+				<hr>
 				<div class="row">
+					<div class="column topic">
 					<h2>Side-hustle</h2>
+					</div>
+					<div class="column image">
+						<img src="http://placehold.it/500">
+					</div>
+					<div class="column content">
+						<h3>The Garage Directory</h3>
+						<p>Not done. This is just a bunch of stuff that I'm writing down for no particular reason other than to take up more space just to see how the flexbox reacts. Is this enough?</p>
+					</div>
 				</div>
 				<div class="row">
-					<div class="column">
+					<div class="column topic">
+					</div>
+					<div class="column image">
+						<img src="http://placehold.it/500">
+					</div>
+					<div class="column content">
 						<h3>The Garage Directory</h3>
-						<p>Not done.</p>
-					</div>
-					<div class="column">
-						<h3>Pitch Perfect 3</h3>
-						<p>Done for a class.</p>
-					</div>
-					<div class="column">
-						<h3>RHA</h3>
-						<p>Okay.</p>
+						<p>Not done. This is just a bunch of stuff that I'm writing down for no particular reason other than to take up more space just to see how the flexbox reacts. Is this enough?</p>
 					</div>
 				</div>
 			</article>

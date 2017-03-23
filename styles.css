@@ -40,8 +40,25 @@ html {
 	width: 25%;
 }
 
-footer {
+article {
 	padding: 10px 10px;
+}
+
+article > .row {
+	margin: 15% 0;
+}
+
+.image {
+	text-align: center;
+}
+
+.image > img {
+	width: 75%;
+	height: auto;
+}
+
+footer {
+	padding: 5% 0 10px 0;
 	text-align: center;
 	font-size: 0.85em;
 	color: whitesmoke;
@@ -70,15 +87,6 @@ a:hover {
 	background-color: whitesmoke;
 }
 
-.topic {
-	/*justify-content: space-around;*/
-	flex-basis: 50%;
-}
-
-article {
-	padding: 10px 10px;
-}
-
 footer a {
 	color: whitesmoke;
 }
@@ -91,16 +99,35 @@ footer a:hover {
 	color: rgb(078, 042, 132);
 }
 
+.icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+#down {
+	margin-bottom: 2.5%;
+}
+
 /* Larger screens */
 @media screen and (min-width: 800px) {
 	.column {
 		flex: 1;
 	}
 
-/*	#links > .row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}*/
+	.topic {
+		flex: 0.3;
+	}
+
+	.image {
+		flex: 0.3;
+		margin-right: 20px;
+	}
+
+	.content {
+		flex: 0.4;
+	}
 }
