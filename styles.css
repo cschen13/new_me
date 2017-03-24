@@ -23,6 +23,7 @@ html {
 	flex-direction: column;
 	min-height: 95vh;
 	align-items: center;
+	font-size: 1.15em;
 }
 
 .column {
@@ -37,7 +38,7 @@ html {
 #links {
 	margin-bottom: auto;
 	text-align: center;
-	width: 25%;
+	width: 30%;
 }
 
 article {
@@ -135,5 +136,14 @@ footer a:hover {
 
 	.project {
 		align-items: center;
+	}
+
+	.icon {
+  width: 2em;
+  height: 2em;
+	}
+
+	#down {
+		margin-bottom: 2.5%;
 	}
 }
