@@ -62,7 +62,8 @@ article > .row {
 footer {
 	padding: 5% 0 10px 0;
 	text-align: center;
-	font-size: 0.85em;
+	line-height: 1.5em;
+	font-size: 0.9em;
 	color: whitesmoke;
 	background-color: #303030;
 }
@@ -70,7 +71,6 @@ footer {
 /* Styling */
 body {
 	font-family: 'Quattrocento', serif;
-	/*background-color: lightgray; */
 }
 
 a {
