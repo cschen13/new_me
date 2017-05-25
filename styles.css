@@ -89,6 +89,10 @@ a:hover {
 	background-color: whitesmoke;
 }
 
+#about:focus {
+	outline:0;
+}
+
 footer a {
 	color: whitesmoke;
 }
